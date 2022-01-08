@@ -6,7 +6,7 @@
  search for curl, if there are no results then your PHP installation doesn't have curl enabled
 */
 
-$input_utterance = 'I failed my exam.';
+$input_utterance = 'I failed my exam...';
 
 $witRoot = "https://api.wit.ai/message?";
 $witVersion = '20220107';
@@ -25,7 +25,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 // adding certificate, if you cannot locate cacert.pem within your MAMP folder, download it from the Google Drive
 // change the path of the certificate to where it is on your local machine
 // remember the syntax for the path changes whether your on a mac or windows machine, the below line is windows syntax
-$certificate = "C:\MAMP\htdocs\demo\cacert.pem";
+$certificate = "C:\MAMP\htdocs\\2022_WINTER_PROJECT\demo\cacert.pem";
 curl_setopt($ch, CURLOPT_CAINFO, $certificate);
 curl_setopt($ch, CURLOPT_CAPATH, $certificate);
 
